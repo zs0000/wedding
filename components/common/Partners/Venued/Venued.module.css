@@ -1,0 +1,8 @@
+.imagery {
+    @apply    z-10 h-screen max-h-screen overflow-y-hidden;
+}
+
+.gradient {
+    @apply bg-black  h-screen md:-mt-4 lg:-mt-0  z-10  w-full md:bg-opacity-10 xs:bg-opacity-30;
+}
+

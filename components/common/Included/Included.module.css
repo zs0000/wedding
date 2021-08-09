@@ -1,0 +1,36 @@
+.main {
+    @apply h-screen max-h-screen bg-gray-50 flex flex-col items-center;
+}
+
+.responsive {
+    @apply bg-none;
+}
+
+.textbox {
+    @apply flex flex-col font-serif py-10 justify-center items-center;
+}
+
+.includedtitle{
+    @apply text-center text-amber-400 underline xl:text-8xl md:text-7xl sm:text-5xl text-4xl pb-4 xl:pb-8 tracking-tight;
+
+}
+
+.includeddescription {
+    @apply lg:text-4xl md:text-3xl sm:text-xl xs:text-lg xs:w-9/12 xl:w-1/2 tracking-tight text-justify;
+}
+
+.includedlist {
+    @apply flex xs:flex-col sm:pt-4 items-center;
+}
+
+.includeditem {
+    @apply  font-serif font-bold py-2 px-2 md:py-5 md:my-3 my-2 lg:mx-6 text-center xs:h-20 sm:h-24 xl:h-24 lg:h-36 lg:text-5xl md:text-4xl xs:text-2xl sm:text-3xl border border-gray-500 text-white bg-black bg-opacity-70 shadow-lg rounded-xl lg:w-7/12 xs:w-9/12;
+}
+
+.content {
+    @apply bg-none ;
+}
+
+.textbox {
+    @apply bg-none;
+}

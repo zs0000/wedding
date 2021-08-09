@@ -1,0 +1,31 @@
+.main {
+    @apply bg-gray-200 flex justify-center items-center flex-col;
+}
+
+.content {
+    @apply flex flex-col rounded-2xl lg:w-2/3 md:w-9/12 xs:w-11/12 justify-center items-center ;
+}
+
+.formbox {
+    @apply  w-full p-4 m-2;
+}
+
+.text {
+    @apply flex flex-col justify-center  items-center;
+}
+
+.contacttitle {
+    @apply xs:text-4xl xs:border-b xl:text-8xl text-gray-700 lg:text-7xl md:text-6xl sm:text-4xl font-serif lg:py-4 xs:py-2 xs:mb-4 mx-2; 
+}
+
+.contactdescription {
+    @apply font-serif py-2 mx-4 text-justify lg:text-xl xl:text-2xl md:text-lg xl:py-6 lg:py-4 xs:mb-4 max-w-prose;
+}
+
+.buttonbox {
+    @apply items-center justify-center flex;
+}
+
+.contactbutton {
+    @apply px-4 py-2 sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl lg:py-3 lg:px-6 md:px-5 md:py-3 xl:py-4 xl:px-8 rounded-xl bg-amber-400 text-white font-serif ;
+}

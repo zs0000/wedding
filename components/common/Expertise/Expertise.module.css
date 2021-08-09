@@ -1,0 +1,28 @@
+.main {
+    @apply max-h-screen h-screen flex flex-row justify-center items-center bg-gray-900 z-30;
+}
+
+.responsive {
+    @apply  z-20 ;
+}
+
+
+.content {
+    @apply   flex md:flex-row xs:flex-col lg:mx-8 xs:mx-4;
+}
+
+.textbox {
+    @apply flex flex-col font-serif  text-center xs:mx-4 sm:mx-4 justify-center items-center  ;
+}
+
+.title {
+    @apply  lg:mb-10 pb-6 py-2 tracking-tight leading-relaxed font-extrabold;
+}
+
+.description {
+    @apply text-2xl  text-gray-100   xs:text-xl mx-2 xs:tracking-tighter text-center;
+}
+
+.imagery {
+    @apply h-auto ;
+}

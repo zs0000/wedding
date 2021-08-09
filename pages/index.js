@@ -1,82 +1,70 @@
 import Head from 'next/head'
+import Script from 'next/script'
+import Layout from '../components/common/Layout/layout'
+import Container from '../components/common/Container/container'
+import Intro  from '../components/common/Intro/Intro'
+import Background from '../components/common/Background/Background'
+import Contact from "../components/common/Contact/Contact"
+import Offer from '../components/common/Offer/Offer'
+import Partners from '../components/common/Partners/Partners'
+import Sweets from '../components/common/Sweets/Sweets'
+import Included from '../components/common/Included/Included'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+   <Layout>
+     <Head>
+      <title>Century Wedding Planners - an Example Wedding Service Planner</title>
+     
+     </Head>
+     <Container>
+       <Background />
+        <Intro
+        introtitle="Your Special Day."
+        introdescription="Let us take care of the tedious tasks, so you have more time to focus on the most memorable moments."
+        />
+        <Offer
+        text="Main Services We Offer"
+        description="A multitude of services, always offered, to fit your needs. From full service wedding planning and arrangements, 
+        to assistance with other necessities like guest catering, professional photographers, arranging fittings, and more! "
+         first="Full Service Wedding Package"
+          firstservicedescription="We'll arrange everything from reserving the venue, managing budgets, arranging fittings, 
+          personal stylists, live music or DJ's, Table and Room stylists, Decorations and theme, photographers and more. Tell us everything you need, and let the rest fall into place!"
+           second="The 'Right-Hand' Package"
+        secondservicedescription="Work closely with our expert staff, with over 7+ years of experience planning the most breath-taking weddings.
+         Anything from sending out invites and arranging transportation, to a 'Right-Hand' personal assistant to be there for rehearsals, and your wedding day."
+        />
+        <Partners 
+        Venue="Elegant Venues"
+        Venuedescription="We partnered with Example Venues and Events to secure access to some of the most breath-taking venues in the World!
+        With Venues in multiple states, it's highly likely we'll secure a deal on some grandiose venues."
+        />
+        <Sweets
+        Sweets="Serenity's Sweets"
+        Sweetsdescription="No need to worry about a cake! As part of our full service package, We work with a Designer Sweet's catering company to accomplish everything for styling the cake, to additional sweets for guests.
+         This example sweet's company has over 10 year's of experience catering to hundreds of guests."
+        />
+        <Included
+        includedtitle="Always Included"
+        includeddescription="No matter what you choose from our selection of packages, every package is eligible for these free services, at no additional cost."
+         first="Professional Photographers"
+          second="Personal Planning Assistants"
+           third="'Day of' Directors and Staff"
+            fourth="Basic Venue (Upgradeable)"
+        />
+        <Contact 
+        contacttitle="Book Appointment"
+        contactdescription="If you're unsure of everything you need, or just want to request a quote, we'll set you up with a Personal Booking Assistant to discuss 
+        planning. Be sure to include a brief summary of what you're looking for to receive the fastest response time!"
+        />
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
-    </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+     </Container>
+   </Layout>
   )
 }

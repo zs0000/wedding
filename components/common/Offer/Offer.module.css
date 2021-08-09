@@ -1,0 +1,49 @@
+.main {
+    @apply  bg-gray-400 px-8 flex flex-col  ;
+}
+
+.text{
+   @apply xs:text-4xl sm:text-5xl lg:pr-24 xl:pr-10  text-left md:text-6xl lg:text-7xl xl:text-8xl py-4 px-2 text-blue-100 font-bold leading-relaxed  font-serif mt-8 sm:mx-0 xs:mx-2 md:px-5 md:mx-4 lg:mx-2 my-4 lg:my-10 lg:mt-32 xs:mt-16; 
+   -webkit-box-shadow: 0 4px 6px -6px #222;
+   -moz-box-shadow: 0 4px 6px -6px #222;
+   box-shadow: 0 4px 6px -6px #222;
+}
+
+.description {
+    @apply text-white xs:mx-auto  font-serif   max-w-prose md:pt-2  lg:text-2xl xl:text-3xl md:text-xl  xs:text-xl;
+}
+.textbox {
+    @apply flex flex-col items-center ;
+} 
+
+.responsive {
+    @apply bg-none;
+}
+
+.offers {
+    @apply  flex lg:flex-row xs:flex-col justify-center items-center lg:pt-28 md:py-10 py-5 xs:pb-12;
+}
+
+.servicetitle {
+    @apply lg:text-3xl md:text-3xl xs:text-2xl font-bold text-left md:mb-4 xs:mb-4 font-serif text-blue-100;
+}
+
+.servicedescription {
+    @apply text-lg text-white;
+}
+
+.navlink {
+    @apply text-gray-200 hover:text-white hover:underline mt-4;
+}
+
+.navlinks {
+    @apply  hover:underline mt-4;
+}
+
+.card {
+    @apply lg:w-1/3 lg:h-96 mx-2 p-4 lg:mx-6 xs:my-4;
+}
+
+.service {
+    @apply bg-gray-200 p-4 mx-2
+}

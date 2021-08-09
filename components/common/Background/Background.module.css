@@ -1,0 +1,23 @@
+.imagery {
+    @apply absolute xs:hidden lg:block z-0 h-screen max-h-screen overflow-y-hidden;
+}
+
+.gradient {
+    @apply bg-black absolute xs:hidden lg:flex h-screen md:-mt-4 lg:-mt-0  z-10  w-full md:bg-opacity-10 xs:bg-opacity-30;
+}
+
+.responsiveimagery {
+    @apply absolute xs:flex md:hidden z-0 h-screen max-h-screen overflow-x-hidden ;
+}
+
+.responsivegradient {
+    @apply bg-black xs:flex md:hidden absolute h-screen md:-mt-4 lg:-mt-0  z-10  w-full md:bg-opacity-10 xs:bg-opacity-30;
+}
+.medresponsiveimagery {
+    @apply absolute md:block xs:hidden lg:hidden  z-0 h-screen max-h-screen overflow-x-hidden ;
+}
+
+.medresponsivegradient {
+    @apply bg-black md:flex lg:hidden xs:hidden absolute h-screen md:-mt-8  z-10  w-full md:bg-opacity-20;
+}
+

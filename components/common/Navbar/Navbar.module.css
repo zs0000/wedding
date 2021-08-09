@@ -1,0 +1,19 @@
+.main {
+    @apply w-full absolute z-50 bg-white bg-opacity-20 border-b border-gray-200 border-opacity-40 shadow-2xl py-2 flex flex-col justify-center items-center;
+}
+
+.bar {
+    @apply w-full;
+}
+
+.items {
+    @apply flex flex-row w-full justify-evenly;
+}
+
+.navitem {
+    @apply text-white font-serif xs:text-sm md:text-lg;
+}
+
+.title {
+    @apply text-white text-center md:text-5xl xs:text-4xl xs:pb-4  md:pb-6 md:-mt-2 font-serif;
+}
